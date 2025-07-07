@@ -230,13 +230,13 @@
     </div>
     <input type="text" id="target" placeholder="Masukkan nomor target (cth: 628xxxx" />
     <div class="bug-options">
-      <div class="bug-card active" data-bug="crashtotal">
+      <div class="bug-card active" data-bug="force">
         <span>FC Invisible</span>
       </div>
       <div class="bug-card" data-bug="delay">
         <span>Invisible Delay</span>
       </div>
-      <div class="bug-card" data-bug="blank">
+      <div class="bug-card" data-bug="crash">
         <span>Blank WhatsApp</span>
       </div>
     </div>
@@ -308,7 +308,7 @@ function showDashboard(user) {
   document.getElementById("userLabel").innerText = user.username;
 }
 
-let selectedBug = "crashtotal";
+let selectedBug = "force";
 document.querySelectorAll(".bug-card").forEach(card => {
   card.addEventListener("click", () => {
     document.querySelectorAll(".bug-card").forEach(c => c.classList.remove("active"));
